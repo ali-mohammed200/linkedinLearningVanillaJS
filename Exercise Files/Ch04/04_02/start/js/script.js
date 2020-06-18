@@ -1,7 +1,7 @@
 "use strict";
-require('dotenv').config();
+// require('dotenv').config(); this is a node thing. not a js thing
+// look into require.js
 
-console.log(process.env.WEATHER);
 (function() {
 	const url = "http://api.openweathermap.org/data/2.5/weather?q=";
 	const apiKey = process.env.WEATHER; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
